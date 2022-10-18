@@ -63,5 +63,6 @@ st.pyplot(fig)
 pxh = px.histogram(data, x="origin", title="지역별 자동차 연비 데이터 수")
 st.plotly_chart(pxh)
 
-lmp = sns.lmplot(data=data, x="mpg", y="weight",hue="origin").set_title("")
+lmp = sns.lmplot(data=data, x="mpg", y="weight",hue="origin")
+plt.title("mpg와 weight 상관관계 lmplot")
 st.pyplot(lmp)
